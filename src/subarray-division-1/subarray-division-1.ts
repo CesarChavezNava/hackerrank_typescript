@@ -12,7 +12,7 @@ export function birthday(
   month: number // Mes de nacimiento de Ron
 ): number {
   let squaresSum: number = 0; // La suma de los cuadrados
-  let initSquare: number = 0; // Index del cuadrado inicial
+  let initSquare: number = 0; // Indice del cuadrado inicial
   let ways: number = 0; // Formas de dividir el chocolate
 
   while (initSquare < squares.length) {

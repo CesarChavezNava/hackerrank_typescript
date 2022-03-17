@@ -23,3 +23,27 @@ __birthday__ tiene los siguientes parametros:
 
 ### Regresa
 - _int_: El número de formas en que se puede dividir la barra.
+
+### Mi solución
+1. Me aseguro de pasar por todos los cuadrados del chocolate.   
+```
+while(initSquare < squares.length) {
+    ...
+    initSquare++;
+}
+```
+2. Sabemos que solo podemos sumar un numero determinado de cuadrados, el cual equivale al mes de cumpleaños de Ron.
+```
+for(let currentSquare = 0; currentSquare < month - 1; currentSquare++) {
+    squaresSum += squares[initSquare + currentSquare];
+}
+
+```
+la instrucción `squaresSum += squares[initSquare + currentSquare]` suma los indices de los cuadrados que ya han sido comporbados.
+
+3. Finalmente se valida si la suma es igual al día de nacimiento de Ron, si es verdadero se suma a las formas de dividir el chocolate.
+
+```
+if (squaresSum === day) ways += 1;
+```
+
