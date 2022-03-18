@@ -4,7 +4,8 @@
   "description": "Ejemplos de HackerRank utilizando TypeScript",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
